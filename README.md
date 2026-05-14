@@ -1,7 +1,10 @@
-<img width="607" height="813" alt="Screenshot 2026-05-14 at 4 19 05 PM" src="https://github.com/user-attachments/assets/ffb1f7cc-09db-4c1c-a384-1828c8ce08ce" />
-<img width="1397" height="807" alt="Screenshot 2026-05-14 at 4 20 12 PM" src="https://github.com/user-attachments/assets/44d44ab0-eb7e-4bef-8dcb-c1e85db5e110" />
-<img width="1479" height="896" alt="Screenshot 2026-05-14 at 4 23 12 PM" src="https://github.com/user-attachments/assets/22ded7d7-154a-496f-84f4-3df2fdb93886" />
 <img width="1692" height="990" alt="Screenshot 2026-05-14 at 4 21 12 PM" src="https://github.com/user-attachments/assets/fbcbae41-bcd7-44c2-83b0-2b7801c007be" />
+<img width="1479" height="896" alt="Screenshot 2026-05-14 at 4 23 12 PM" src="https://github.com/user-attachments/assets/22ded7d7-154a-496f-84f4-3df2fdb93886" />
+<img width="1397" height="807" alt="Screenshot 2026-05-14 at 4 20 12 PM" src="https://github.com/user-attachments/assets/44d44ab0-eb7e-4bef-8dcb-c1e85db5e110" />
+<img width="607" height="813" alt="Screenshot 2026-05-14 at 4 19 05 PM" src="https://github.com/user-attachments/assets/ffb1f7cc-09db-4c1c-a384-1828c8ce08ce" />
+
+
+
 # 🚀 InterviewIQ.AI
 
 An AI-powered mock interview platform that helps users practice technical and HR interviews with real-time question generation, resume analysis, and performance tracking.
