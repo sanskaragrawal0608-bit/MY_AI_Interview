@@ -64,8 +64,56 @@ The platform analyzes responses and stores interview history so users can track 
 
 ## 🏗️ System Architecture
 
+
+
 ```text
-User → React Frontend → Express API → MongoDB
-                     ↘ Firebase Auth
-                     ↘ AI API
-                     ↘ Razorpay
+┌─────────────────────────────────────────────────────────────┐
+│                         User Browser                       │
+│                    (Chrome / Safari / Brave)               │
+└─────────────────────────────┬───────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    React Frontend (Vite)                   │
+│                                                             │
+│ • Google Authentication (Firebase)                         │
+│ • Interview Setup Form                                     │
+│ • Resume Upload                                            │
+│ • AI Interview Interface                                   │
+│ • Performance Dashboard                                    │
+│ • Interview History                                        │
+└─────────────────────────────┬───────────────────────────────┘
+                              │
+                              │ Axios API Calls + JWT Cookie
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                 Node.js + Express Backend                  │
+│                                                             │
+│ • Authentication APIs                                      │
+│ • User Management APIs                                     │
+│ • Interview APIs                                           │
+│ • Resume Analysis APIs                                     │
+│ • Payment APIs                                             │
+│ • Report Generation APIs                                   │
+└───────┬───────────────┬───────────────┬─────────────────────┘
+        │               │               │
+        ▼               ▼               ▼
+
+┌───────────────┐  ┌───────────────┐  ┌─────────────────────┐
+│   MongoDB     │  │ Gemini/OpenAI │  │      Razorpay       │
+│               │  │     API       │  │                     │
+│ • Users       │  │               │  │ • Subscription      │
+│ • Interviews  │  │ • Question    │  │ • Payment Gateway   │
+│ • Reports     │  │   Generation  │  │                     │
+│ • History     │  │ • Feedback    │  │                     │
+└───────────────┘  └───────────────┘  └─────────────────────┘
+
+        ▲
+        │
+        │
+┌─────────────────────────────┐
+│       Firebase Auth         │
+│                             │
+│ • Google Sign-In            │
+│ • User Authentication       │
+└─────────────────────────────┘
