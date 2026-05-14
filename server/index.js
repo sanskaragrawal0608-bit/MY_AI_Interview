@@ -10,7 +10,7 @@ import interviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
 const app = express()
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5175"]
+const allowedOrigins = ["http://localhost:5173", "http://localhost:5175",  "https://my-ai-interview-frontend.onrender.com"]
 
 app.use(cors({
     origin(origin, callback) {
